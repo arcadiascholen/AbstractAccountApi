@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AbstractAccountApi
 {
-    public class Class1
+    public interface ILog
     {
+        void AddMessage(string message);
+        void AddError(string message);
     }
 }
