@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
 namespace AbstractAccountApi
 {
@@ -32,5 +33,8 @@ namespace AbstractAccountApi
         void GetTreeAsList(List<IGroup> list);
 
         Task LoadAccounts();
+
+        JObject ToJson(bool includeAccounts);
+        bool Equals(IGroup other, bool recursive, bool includeAccounts);
     }
 }

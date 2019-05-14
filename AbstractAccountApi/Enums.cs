@@ -48,4 +48,12 @@ namespace AbstractAccountApi
         Group,
         Class,
     }
+
+    public enum ConfigState
+    {
+        Unknown,
+        InProgress,
+        OK,
+        Failed,
+    }
 }

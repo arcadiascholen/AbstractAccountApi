@@ -9,12 +9,12 @@ namespace AbstractAccountApi
 {
     public class TestLogger : ILog
     {
-        public void AddError(string message)
+        public void AddError(Origin origin, string message)
         {
             Debug.WriteLine("Error: "+ message);
         }
 
-        public void AddMessage(string message)
+        public void AddMessage(Origin origin, string message)
         {
             Debug.WriteLine("Warning: " + message);
         }

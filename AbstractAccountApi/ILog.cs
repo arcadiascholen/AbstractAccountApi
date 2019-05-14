@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace AbstractAccountApi
 {
+    public enum Origin
+    {
+        All,
+        Wisa,
+        Smartschool,
+        Directory,
+        Other,
+    }
+
     public interface ILog
     {
-        void AddMessage(string message);
-        void AddError(string message);
+        void AddMessage(Origin origin, string message);
+        void AddError(Origin origin, string message);
     }
 }
