@@ -26,6 +26,7 @@ namespace AbstractAccountApi
         List<IAccount> Accounts { set; get; }
 
         IGroup Find(string name);
+        bool HasParent(string name);
         int Count { get; }
         int CountClassGroupsOnly { get; }
         int NumAccounts();
@@ -33,6 +34,7 @@ namespace AbstractAccountApi
         void GetTreeAsList(List<IGroup> list);
 
         Task LoadAccounts();
+        void ApplyImportRules(List<IRule> rules);
 
         JObject ToJson(bool includeAccounts);
         bool Equals(IGroup other, bool recursive, bool includeAccounts);

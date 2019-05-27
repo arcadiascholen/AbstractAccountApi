@@ -48,6 +48,8 @@
     <Compile Include="IAccount.cs" />
     <Compile Include="IGroup.cs" />
     <Compile Include="ILog.cs" />
+    <Compile Include="IRule.cs" />
+    <Compile Include="Observable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestLogger.cs" />
     <Compile Include="Utils.cs" />
