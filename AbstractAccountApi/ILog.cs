@@ -12,6 +12,7 @@ namespace AbstractAccountApi
         Wisa,
         Smartschool,
         Directory,
+        Google,
         Other,
     }
 
