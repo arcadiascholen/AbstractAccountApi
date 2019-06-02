@@ -46,7 +46,7 @@ namespace AbstractAccountApi
         void setConfig(int ID, string data);
         string getConfig(int ID);
 
-        bool Apply(object obj);
-        void Modify();
+        bool ShouldApply(object obj);
+        void Modify(object obj);
     }
 }
