@@ -16,6 +16,7 @@ namespace AbstractAccountApi
 
         // Wisa Import Rules
         WI_ReplaceInstitution,
+        WI_DontImportClass,
     }
 
     public enum RuleType
